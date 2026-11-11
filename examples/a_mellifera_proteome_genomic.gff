@@ -1,0 +1,19 @@
+##gff-version 3
+scaffold_A	Synthetic	gene	100	199	.	+	.	ID=gene-scaffold_A_1;Name=scaffold_A_1;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	500	599	.	+	.	ID=gene-scaffold_A_2;Name=scaffold_A_2;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	10000	10099	.	+	.	ID=gene-scaffold_A_3;Name=scaffold_A_3;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	45000	45099	.	+	.	ID=gene-scaffold_A_4;Name=scaffold_A_4;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	45001	45100	.	+	.	ID=gene-scaffold_A_5;Name=scaffold_A_5;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	90000	90099	.	+	.	ID=gene-scaffold_A_6;Name=scaffold_A_6;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	150000	150099	.	+	.	ID=gene-scaffold_A_7;Name=scaffold_A_7;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	280000	280099	.	+	.	ID=gene-scaffold_A_8;Name=scaffold_A_8;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	390000	390099	.	+	.	ID=gene-scaffold_A_9;Name=scaffold_A_9;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	500000	500099	.	+	.	ID=gene-scaffold_A_10;Name=scaffold_A_10;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	900000	900099	.	+	.	ID=gene-scaffold_A_11;Name=scaffold_A_11;gene_biotype=protein_coding
+scaffold_A	Synthetic	gene	1500000	1500099	.	+	.	ID=gene-scaffold_A_12;Name=scaffold_A_12;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	200	299	.	+	.	ID=gene-scaffold_B_1;Name=scaffold_B_1;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	55000	55099	.	+	.	ID=gene-scaffold_B_2;Name=scaffold_B_2;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	160000	160099	.	+	.	ID=gene-scaffold_B_3;Name=scaffold_B_3;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	300000	300099	.	+	.	ID=gene-scaffold_B_4;Name=scaffold_B_4;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	800000	800099	.	+	.	ID=gene-scaffold_B_5;Name=scaffold_B_5;gene_biotype=protein_coding
+scaffold_B	Synthetic	gene	1800000	1800099	.	+	.	ID=gene-scaffold_B_6;Name=scaffold_B_6;gene_biotype=protein_coding

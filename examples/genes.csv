@@ -1,0 +1,9 @@
+species,superfamily,level,group,gene,scaffold,start,end
+a_mellifera,P450,subfamily,DEMO_CLOSE,scaffold_A_1,scaffold_A,100,199
+a_mellifera,P450,subfamily,DEMO_CLOSE,scaffold_A_2,scaffold_A,500,599
+a_mellifera,P450,subfamily,DEMO_CLOSE,scaffold_A_3,scaffold_A,10000,10099
+a_mellifera,P450,subfamily,DEMO_SPREAD,scaffold_A_8,scaffold_A,280000,280099
+a_mellifera,P450,subfamily,DEMO_SPREAD,scaffold_A_10,scaffold_A,500000,500099
+a_mellifera,P450,subfamily,DEMO_SPREAD,scaffold_A_12,scaffold_A,1500000,1500099
+a_mellifera,P450,subfamily,DEMO_CLOSE,scaffold_B_1,scaffold_B,200,299
+a_mellifera,P450,subfamily,DEMO_SINGLE,scaffold_B_6,scaffold_B,1800000,1800099

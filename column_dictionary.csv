@@ -1,0 +1,77 @@
+column,definition
+species,Species file key; joins to SPECIES_proteome_genomic.gff.
+superfamily,Curated superfamily label.
+level,"Classification level: family, subfamily, clade, or class."
+group,Curated group label at that classification level.
+n_genes,"N: all observed group loci, including scaffold singletons."
+n_scaffolds,Number of scaffolds containing observed group loci.
+n_without_partner,Number of genes with no other same-group gene on their scaffold.
+n_evaluable,A = N - n_without_partner; denominator of nearest-neighbor fractions.
+counts_per_scaffold,"JSON object mapping scaffold IDs to observed gene counts, held fixed in every draw."
+threshold_bp,"L in bp (default 35000), applied to both threshold statistics with their distinct gap definitions."
+iterations,B draws actually performed; zero for untested groups.
+status,"tested or no_pairs_on_scaffold. Untested inferential fields are blank, not zero."
+p_proximity,Lower-tail Monte Carlo P: (1 + number of null medians <= observed median)/(B + 1).
+q_proximity_bh,BH-adjusted p_proximity across all tested groups in this invocation.
+p_clustering,Upper-tail Monte Carlo P: (1 + number of null clustered counts >= observed count)/(B + 1).
+q_clustering_bh,"BH-adjusted p_clustering across all tested groups in this invocation, separately from proximity."
+observed_n_clusters,Observed number of consecutive same-group runs containing at least two genes.
+observed_n_clustered_genes,G: number of observed genes in those runs.
+observed_mean_bp,Observed arithmetic mean of evaluable nearest-neighbor distances (bp).
+observed_q1_bp,Observed 25th percentile of evaluable nearest-neighbor distances (bp).
+observed_median_bp,Observed median of evaluable nearest-neighbor distances (bp).
+observed_q3_bp,Observed 75th percentile of evaluable nearest-neighbor distances (bp).
+observed_p90_bp,Observed 90th percentile of evaluable nearest-neighbor distances (bp).
+observed_p95_bp,Observed 95th percentile of evaluable nearest-neighbor distances (bp).
+observed_minimum_bp,Observed minimum evaluable nearest-neighbor distance (bp).
+observed_maximum_bp,"Observed maximum evaluable nearest-neighbor distance (bp), not the maximum pairwise or consecutive gap."
+observed_zero_fraction,Observed fraction of A evaluable genes with zero nearest-neighbor distance (overlap or immediate adjacency).
+observed_within_threshold_fraction,Observed fraction of A evaluable genes with nearest-neighbor distance <= L.
+observed_clustered_fraction,Observed fraction G/N of all group genes belonging to clusters.
+null_mean_bp_mean,Arithmetic mean across B per-draw values of the arithmetic mean of evaluable nearest-neighbor distances (bp).
+null_mean_bp_p025,2.5th percentile across B per-draw values of the arithmetic mean of evaluable nearest-neighbor distances (bp).
+null_mean_bp_p50,Median across B per-draw values of the arithmetic mean of evaluable nearest-neighbor distances (bp).
+null_mean_bp_p975,97.5th percentile across B per-draw values of the arithmetic mean of evaluable nearest-neighbor distances (bp).
+null_q1_bp_mean,Arithmetic mean across B per-draw values of the 25th percentile of evaluable nearest-neighbor distances (bp).
+null_q1_bp_p025,2.5th percentile across B per-draw values of the 25th percentile of evaluable nearest-neighbor distances (bp).
+null_q1_bp_p50,Median across B per-draw values of the 25th percentile of evaluable nearest-neighbor distances (bp).
+null_q1_bp_p975,97.5th percentile across B per-draw values of the 25th percentile of evaluable nearest-neighbor distances (bp).
+null_median_bp_mean,Arithmetic mean across B per-draw values of the median of evaluable nearest-neighbor distances (bp).
+null_median_bp_p025,2.5th percentile across B per-draw values of the median of evaluable nearest-neighbor distances (bp).
+null_median_bp_p50,Median across B per-draw values of the median of evaluable nearest-neighbor distances (bp).
+null_median_bp_p975,97.5th percentile across B per-draw values of the median of evaluable nearest-neighbor distances (bp).
+null_q3_bp_mean,Arithmetic mean across B per-draw values of the 75th percentile of evaluable nearest-neighbor distances (bp).
+null_q3_bp_p025,2.5th percentile across B per-draw values of the 75th percentile of evaluable nearest-neighbor distances (bp).
+null_q3_bp_p50,Median across B per-draw values of the 75th percentile of evaluable nearest-neighbor distances (bp).
+null_q3_bp_p975,97.5th percentile across B per-draw values of the 75th percentile of evaluable nearest-neighbor distances (bp).
+null_p90_bp_mean,Arithmetic mean across B per-draw values of the 90th percentile of evaluable nearest-neighbor distances (bp).
+null_p90_bp_p025,2.5th percentile across B per-draw values of the 90th percentile of evaluable nearest-neighbor distances (bp).
+null_p90_bp_p50,Median across B per-draw values of the 90th percentile of evaluable nearest-neighbor distances (bp).
+null_p90_bp_p975,97.5th percentile across B per-draw values of the 90th percentile of evaluable nearest-neighbor distances (bp).
+null_p95_bp_mean,Arithmetic mean across B per-draw values of the 95th percentile of evaluable nearest-neighbor distances (bp).
+null_p95_bp_p025,2.5th percentile across B per-draw values of the 95th percentile of evaluable nearest-neighbor distances (bp).
+null_p95_bp_p50,Median across B per-draw values of the 95th percentile of evaluable nearest-neighbor distances (bp).
+null_p95_bp_p975,97.5th percentile across B per-draw values of the 95th percentile of evaluable nearest-neighbor distances (bp).
+null_minimum_bp_mean,Arithmetic mean across B per-draw values of the minimum evaluable nearest-neighbor distance (bp).
+null_minimum_bp_p025,2.5th percentile across B per-draw values of the minimum evaluable nearest-neighbor distance (bp).
+null_minimum_bp_p50,Median across B per-draw values of the minimum evaluable nearest-neighbor distance (bp).
+null_minimum_bp_p975,97.5th percentile across B per-draw values of the minimum evaluable nearest-neighbor distance (bp).
+null_maximum_bp_mean,"Arithmetic mean across B per-draw values of the maximum evaluable nearest-neighbor distance (bp), not the maximum pairwise or consecutive gap."
+null_maximum_bp_p025,"2.5th percentile across B per-draw values of the maximum evaluable nearest-neighbor distance (bp), not the maximum pairwise or consecutive gap."
+null_maximum_bp_p50,"Median across B per-draw values of the maximum evaluable nearest-neighbor distance (bp), not the maximum pairwise or consecutive gap."
+null_maximum_bp_p975,"97.5th percentile across B per-draw values of the maximum evaluable nearest-neighbor distance (bp), not the maximum pairwise or consecutive gap."
+null_zero_fraction_mean,Arithmetic mean across B per-draw values of the fraction of A evaluable genes with zero nearest-neighbor distance (overlap or immediate adjacency).
+null_zero_fraction_p025,2.5th percentile across B per-draw values of the fraction of A evaluable genes with zero nearest-neighbor distance (overlap or immediate adjacency).
+null_zero_fraction_p50,Median across B per-draw values of the fraction of A evaluable genes with zero nearest-neighbor distance (overlap or immediate adjacency).
+null_zero_fraction_p975,97.5th percentile across B per-draw values of the fraction of A evaluable genes with zero nearest-neighbor distance (overlap or immediate adjacency).
+null_within_threshold_fraction_mean,Arithmetic mean across B per-draw values of the fraction of A evaluable genes with nearest-neighbor distance <= L.
+null_within_threshold_fraction_p025,2.5th percentile across B per-draw values of the fraction of A evaluable genes with nearest-neighbor distance <= L.
+null_within_threshold_fraction_p50,Median across B per-draw values of the fraction of A evaluable genes with nearest-neighbor distance <= L.
+null_within_threshold_fraction_p975,97.5th percentile across B per-draw values of the fraction of A evaluable genes with nearest-neighbor distance <= L.
+null_clustered_fraction_mean,Arithmetic mean across B per-draw values of the fraction G/N of all group genes belonging to clusters.
+null_clustered_fraction_p025,2.5th percentile across B per-draw values of the fraction G/N of all group genes belonging to clusters.
+null_clustered_fraction_p50,Median across B per-draw values of the fraction G/N of all group genes belonging to clusters.
+null_clustered_fraction_p975,97.5th percentile across B per-draw values of the fraction G/N of all group genes belonging to clusters.
+observed_to_null_median_ratio,Observed nearest-neighbor median / median of null medians; blank when the null denominator is zero.
+null_median_variable,True if the simulated nearest-neighbor medians have nonzero range.
+null_clustering_variable,True if simulated clustered fractions have nonzero range.
